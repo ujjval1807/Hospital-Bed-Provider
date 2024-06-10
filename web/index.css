@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.08rem;
+}
+
+
+
+/* Header Starts Here */
+
+/* Company Logo Starts Here */
+
+.companylogo{
+    /* border: 2px solid green; */
+    display: inline-block;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px 150px;
+}
+.companylogo img {
+    /* border: 2px solid green; */
+    width: 150px;
+}
+
+/* Company Logo Starts Here */
+
+.fullmainheader{
+    /* border: 2px solid green; */
+    color: whitesmoke;
+    background-color: #0d1128!important;
+    position: sticky;
+}
+.navbar{
+    /* border: 2px solid green; */
+    display: inline-block;
+    position: absolute;
+    right: 150px;
+    box-sizing: border-box;
+    }
+.navbar li {
+    /* border: 2px solid green; */
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 30px 8px;
+    margin: 0px 10px;
+    box-sizing: border-box;
+    }
+a:link {
+   text-decoration: none;
+  }
+
+a{
+    color: whitesmoke;
+}
+
+/* Header End Here */
+
+
+/*Body Starts Here*/
+
+.fullcontent{
+    width:100%;
+    height: 500px;
+    position: absolute;
+    background: url("Images/Home_BG.jpg");
+    background-size: 100% 100%;
+
+}
+.bgcontent{
+    width: 100%;
+    height: 500px;
+    font-size: 20px;
+    text-align: center;
+    background :linear-gradient(to right, rgba(13, 17, 40, 1)30%,rgba(13, 17, 40, 0.7)70%,rgba(13, 17, 40, 0));
+    position: relative;
+    z-index: 2;
+}
+.content{
+    width: 60%;
+    height: auto;
+    padding: 5% 5% 1% 8%;
+    text-align: center;
+    position: relative;
+}
+
+
+.content h2{
+    color: whitesmoke;
+    text-align: left;
+    font-size: 85px;
+    font-weight: 400;
+    opacity: 0.7;
+    letter-spacing: 1.5px;
+    box-sizing: border-box;
+}
+.content p{
+    color: whitesmoke;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 800;
+    opacity: 0.8;
+    letter-spacing: 1.0px;
+    box-sizing: border-box;
+}
+
+
+.btn{
+    width: 15%;
+    height: 10%;
+    margin: 0% 7%;
+    padding: 1rem;
+}
+.btn button{
+    width:100%;
+    height:80%;
+    margin:3px;
+    border:none;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 6px;
+    text-align: center;
+    color:rgba(13, 17, 40, 1);
+    background-color: whitesmoke;  
+}
+.btn button:hover{
+    display: block;
+    color: whitesmoke;
+    background-color:rgba(13, 17, 40, 1);
+    border: 2px solid whitesmoke;
+}
+.btn a{
+    text-decoration: none;
+}
+
+/*Body Ends Here*/

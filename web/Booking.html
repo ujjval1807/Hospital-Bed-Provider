@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links ------------------------------------------------------------------------------------->
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="Booking.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+        <title>Booking</title>
+    </head>
+
+
+    <body>
+        <header class="fullmainheader">
+
+            <div class="companylogo">
+                <img src="Images/LOGO.png" alt="">
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li class="link">
+                        <a href="index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="Booking.html">
+                            BOOKING
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="gallery.html">
+                            GALLERY
+                        </a>
+                    </li>
+                    
+                    <li class="link">
+                        <a href="About Us.html">
+                            ABOUT US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </header>
+
+
+        <section>
+            <div class="search">
+                <h2>Select your Hospital</h2>
+
+                <div class="list">
+                    <div class="searchbar">
+                        <label for="search">Search:</label>
+                        <input type="search" name="search" id="myInput"   placeholder="hospitals or city" onkeyup="searchFun()">
+                    </div>
+                    <br><br>
+                    <table id="mytable" cellspacing="0">
+                        <tr>
+                            <th>Hospitals name</th>
+                            <th>Cities/Areas</th>
+                            <th>Select</th>
+                        </tr>
+                        <form action="hosp.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Healthcare Nursing Home" name="hname">Healthcare Nursing Home </td>
+                                <td><input type="hidden" value="Bandra" name="location">Bandra</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="hosp.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Jivan care Hospital" name="hname">Jivan care Hospital</td>
+                                <td><input type="hidden" value="Bandra" name="location">Bandra</td>
+                                <td><button class="button">Select</button></td>
+
+                            </tr>
+                        </form>
+
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="J.k Shah Nursing Home" name="hname">J.k Shah Nursing Home </td>
+                                <td><input type="hidden" value="Bandra" name="location">Bandra</td>
+                                <td><button class="button">Select</button></td>
+
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Ekta Polyclinic" name="hname">Ekta Polyclinic </td>
+                                <td><input type="hidden" value="Bandra" name="location">Bandra</td>
+                                <td><button class="button">Select</button></td>
+
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="P.R Rao Nursing Home " name="hname">P.R Rao Nursing Home </td>
+                                <td><input type="hidden" value="Bandra" name="location">Bandra</td>
+                                <td><button class="button">Select</button></td>
+
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Padmavati Polyclinic" name="hname">Padmavati Polyclinic</td>
+                                <td><input type="hidden" value="Malad" name="location">Malad</td>
+                                <td><button class="button">Select</button></td>
+
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Padmavati Hospital" name="hname">Padmavati Hospital</td>
+                                <td><input type="hidden" value="Sion" name="location">Sion</td>
+                                <td><button class="button">Select</button></td>
+
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Padmavati Multispecialist" name="hname">Padmavati Multispecialist</td>
+                                <td><input type="hidden" value="Kandivali" name="location">Kandivali</td>
+                                <td><button class="button">Select</button></td>
+
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="J.K Sawant Polyclinic" name="hname">J.K Sawant Polyclinic</td>
+                                <td><input type="hidden" value="Malad" name="location">Malad</td>
+                                <td><button class="button">Select</button></td>
+
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="B.K Hospital" name="hname">B.K Hospital</td>
+                                <td><input type="hidden" value="Jogeshwari" name="location">Jogeshwari</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="City Hospital" name="hname">City Hospital</td>
+                                <td><input type="hidden" value="Jogeshwari" name="location">Jogeshwari</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="R.V kumar Clinic & Nursing Home" name="hname">R.V kumar Clinic & Nursing Home</td>
+                                <td><input type="hidden" value="Miraroad" name="location">Miraroad</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Padmavati Polyclinic" name="hname">Padmavati Polyclinic</td>
+                                <td><input type="hidden" value="Naigaon" name="location">Naigaon</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="M.D Mehta Maternity Clinic " name="hname">M.D Mehta Maternity Clinic </td>
+                                <td><input type="hidden" value="Naigaon" name="location">Naigaon</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <<form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Healthcare clinic" name="hname">Healthcare clinic</td>
+                                <td><input type="hidden" value="Nallasopara" name="location">Nallasopara</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="City Hospital" name="hname">City Hospital</td>
+                                <td><input type="hidden" value="Goregaon" name="location">Goregaon</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Samarth Healthcare Hospital" name="hname">Samarth Healthcare Hospital</td>
+                                <td><input type="hidden" value="Ram Mandir" name="location">Ram Mandir</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Shivam Svatyaseva kendra " name="hname">Shivam Svatyaseva kendra </td>
+                                <td><input type="hidden" value="Kandivali" name="location">Kandivali</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Sanjivani Hospital" name="hname">Sanjivani Hospital</td>
+                                <td><input type="hidden" value="Dahisar" name="location">Dahisar</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Pushraj Children's Hospital" name="hname">Pushraj Children's Hospital</td>
+                                <td><input type="hidden" value="Kalyan" name="location">Kalyan</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="M.R.H Multispecialist" name="hname">M.R.H Multispecialist</td>
+                                <td><input type="hidden" value="Andheri" name="location">Andheri</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="O.P Nursing Home & Iccu" name="hname">O.P Nursing Home & Iccu</td>
+                                <td><input type="hidden" value="Virar" name="location">Virar </td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="register.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="J.K Maternity clinic" name="hname">J.K Maternity clinic</td>
+                                <td><input type="hidden" value="Naigaon" name="location">Naigaon</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="hosp.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="M.K Rao Iccu" name="hname">M.K Rao Iccu</td>
+                                <td><input type="hidden" value="Vasai" name="location">Vasai</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="hosp.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Risk Care Hospital" name="hname">Risk Care Hospital</td>
+                                <td><input type="hidden" value="Vasai" name="location">Vasai</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="hosp.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="People Care Hospital" name="hname">People Care Hospital</td>
+
+                                <td><input type="hidden" value="Virar" name="location">Virar</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="hosp.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="Samrath Hospital" name="hname">Samrath Hospital</td>
+                                <td><input type="hidden" value="Marine lines" name="location">Marine lines</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                        <form action="hosp.jsp" method="post">
+                            <tr>
+                                <td><input type="hidden" value="City Hospital" name="hname">City Hospital</td>
+                                <td><input type="hidden" value="Churchgate" name="location">Churchgate</td>
+                                <td><button class="button">Select</button></td>
+                            </tr>
+                        </form>
+                    </table>
+                    <p id="none" style="display: none;">End of List(Maybe not Available)</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>All rights are reserved by Administration</p>
+        </footer>
+        <script>
+
+            const searchFun = () => {
+
+                let filter = document.getElementById('myInput').value.toUpperCase();
+                let mytable = document.getElementById('mytable');
+                let tr = mytable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td1 = tr[i].getElementsByTagName('td')[0];
+                    let td2 = tr[i].getElementsByTagName('td')[1];
+
+                    if (td1 || td2) {
+                        let textvalue1 = td1.textcontent || td1.innerHTML;
+                        let textvalue2 = td2.textcontent || td2.innerHTML;
+
+                        if ((textvalue1.toUpperCase().indexOf(filter) > -1) || (textvalue2.toUpperCase().indexOf(filter) > -1)) {
+                            tr[i].style.display = "";
+                        }
+                        /*     if((textvalue1.toUpperCase().indexOf(filter) == -1) || (textvalue2.toUpperCase().indexOf(filter) == -1)){
+                         
+                         }*/
+                        else {
+                            if (document.getElementById('none').style.display = "none")
+                                document.getElementById('none').style.display = "block";
+                            tr[i].style.display = "none";
+
+                        }
+
+                    }
+                }
+            }
+        </script>
+    </body>
+
+</html>

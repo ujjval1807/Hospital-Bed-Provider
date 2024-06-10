@@ -1,0 +1,70 @@
+
+body{
+    background-image: url("Gallery/img.jpg");
+}
+
+.list{
+  
+    margin: 40px;
+}
+.list h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    font-size: 32px;
+    height:60px;
+    line-height: 60px;
+    color:rgb(13, 226, 5);
+    text-shadow: 10px 10px 10px black;     
+    background: rgba(3, 0, 0, 0.575);
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+     margin-bottom: 40px;
+}
+.list table{
+    margin: auto;
+   width:50%;
+   font-size: 20px;
+   border:1px solid blue;
+   
+}
+.list table tr{
+    background: rgb(223, 205, 205);
+    color:rgb(63, 6, 6);
+    
+}
+.list table td{
+    border:1px solid blue;
+    padding: 10px;
+    
+}
+.list table tr:hover{
+    color:white;
+    background: rgba(0, 0, 0, 0.74);
+}
+.list button{
+    padding: 5px;
+    margin:auto 25%;
+    width:30%;
+    font-size: 20px;
+    font-family: Bahnschrift;
+    background-color: #FF0000;
+    color:#FFFF00;
+    border:none;
+    border-radius:20px;
+}
+.list td a{
+    text-decoration: none;
+    padding: 5px;
+    margin:auto 25%;
+    width: 30%;
+    display: block;
+    font-size: 20px;
+    font-family: Bahnschrift;
+    background-color: #FF0000;
+    color:#FFFF00;
+    border:none;
+    border-radius:20px;
+    text-align: center;
+}
